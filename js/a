@@ -1,0 +1,1994 @@
+<?xml version='1.0' encoding="ISO-8859-1" standalone="no" ?> 
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://schemas.opengis.net/wms/1.1.1/WMS_MS_Capabilities.dtd"
+ [
+ <!ELEMENT VendorSpecificCapabilities EMPTY> 
+ ]>  <!-- end of DOCTYPE declaration --> 
+ 
+<WMT_MS_Capabilities version="1.1.1"> 
+ 
+<!-- MapServer version 5.6.5 OUTPUT=GIF OUTPUT=PNG OUTPUT=JPEG OUTPUT=WBMP OUTPUT=SVG SUPPORTS=PROJ SUPPORTS=AGG SUPPORTS=FREETYPE SUPPORTS=ICONV SUPPORTS=WMS_SERVER SUPPORTS=WMS_CLIENT SUPPORTS=WFS_SERVER SUPPORTS=WFS_CLIENT SUPPORTS=WCS_SERVER SUPPORTS=SOS_SERVER SUPPORTS=THREADS SUPPORTS=GEOS INPUT=EPPL7 INPUT=POSTGIS INPUT=OGR INPUT=GDAL INPUT=SHAPEFILE --> 
+ 
+<Service> 
+  <Name>OGC:WMS</Name> 
+  <Title>Servicios WMS IDEF</Title> 
+  <Abstract>Servicios WMS realizado por la Infraestructura de Datos Espaciales de la provincia de Formosa</Abstract> 
+  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/> 
+  <ContactInformation> 
+  </ContactInformation> 
+</Service> 
+ 
+<Capability> 
+  <Request> 
+    <GetCapabilities> 
+      <Format>application/vnd.ogc.wms_xml</Format> 
+      <DCPType> 
+        <HTTP> 
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Get> 
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Post> 
+        </HTTP> 
+      </DCPType> 
+    </GetCapabilities> 
+    <GetMap> 
+      <Format>image/png</Format> 
+      <Format>image/jpeg</Format> 
+      <Format>image/png; mode=24bit</Format> 
+      <Format>image/tiff</Format> 
+      <Format>image/gif</Format> 
+      <Format>image/vnd.wap.wbmp</Format> 
+      <Format>image/svg+xml</Format> 
+      <DCPType> 
+        <HTTP> 
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Get> 
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Post> 
+        </HTTP> 
+      </DCPType> 
+    </GetMap> 
+    <GetFeatureInfo> 
+      <Format>text/plain</Format> 
+      <Format>application/vnd.ogc.gml</Format> 
+      <DCPType> 
+        <HTTP> 
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Get> 
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Post> 
+        </HTTP> 
+      </DCPType> 
+    </GetFeatureInfo> 
+    <DescribeLayer> 
+      <Format>text/xml</Format> 
+      <DCPType> 
+        <HTTP> 
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Get> 
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Post> 
+        </HTTP> 
+      </DCPType> 
+    </DescribeLayer> 
+    <GetLegendGraphic> 
+      <Format>image/png</Format> 
+      <Format>image/jpeg</Format> 
+      <Format>image/png; mode=24bit</Format> 
+      <Format>image/gif</Format> 
+      <Format>image/vnd.wap.wbmp</Format> 
+      <DCPType> 
+        <HTTP> 
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Get> 
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Post> 
+        </HTTP> 
+      </DCPType> 
+    </GetLegendGraphic> 
+    <GetStyles> 
+      <Format>text/xml</Format> 
+      <DCPType> 
+        <HTTP> 
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Get> 
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?"/></Post> 
+        </HTTP> 
+      </DCPType> 
+    </GetStyles> 
+  </Request> 
+  <Exception> 
+    <Format>application/vnd.ogc.se_xml</Format> 
+    <Format>application/vnd.ogc.se_inimage</Format> 
+    <Format>application/vnd.ogc.se_blank</Format> 
+  </Exception> 
+  <VendorSpecificCapabilities /> 
+  <UserDefinedSymbolization SupportSLD="1" UserLayer="0" UserStyle="1" RemoteWFS="0"/> 
+  <Layer> 
+    <Name>MS</Name> 
+    <Title>Servicios WMS IDEF</Title> 
+    <Abstract>Servicios WMS realizado por la Infraestructura de Datos Espaciales de la provincia de Formosa</Abstract> 
+    <SRS>EPSG:3035</SRS> 
+    <SRS>EPSG:4326</SRS> 
+    <SRS>EPSG:32767</SRS> 
+    <SRS>EPSG:32768</SRS> 
+    <SRS>EPSG:32769</SRS> 
+    <SRS>EPSG:4031</SRS> 
+    <LatLonBoundingBox minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+    <BoundingBox SRS="EPSG:4031"
+                minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+    <Layer queryable="0" opaque="0" cascaded="0"> 
+        <Name>cat_pvc_historicoparajes</Name> 
+        <Title>Historico Parajes</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="0"> 
+        <Name>cat_pvc_mosaicospot</Name> 
+        <Title>Mosaico Spot Zona Este</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_liminternacionales</Name> 
+        <Title>LÃ­mites Internacionales</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+        <ScaleHint min="187.088193983978" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_limdepartam</Name> 
+        <Title>LÃ­mites Departamentales</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+        <ScaleHint min="187.088193983978" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_juradmin</Name> 
+        <Title>Jurisdicciones Administrativas</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_accidgeogesp</Name> 
+        <Title>Accidentes GeogrÃ¡ficos Especiales</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_ejidos</Name> 
+        <Title>Ejidos Urbanos</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+        <ScaleHint min="0" max="935.443214982706" /> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_transportes</Name> 
+        <Title>Transportes</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_viascom</Name> 
+        <Title>VÃ­as de ComunicaciÃ³n</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_curvasnivel</Name> 
+        <Title>Curvas de Nivel</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_viasferreas</Name> 
+        <Title>VÃ­as FÃ©rreas</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>upca_prov_cuencashid</Name> 
+        <Title>Cuencas HÃ­dricas</Title> 
+        <Abstract>Vista de las Cuencas HÃ­dricas de la provincia de Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <LatLonBoundingBox minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <BoundingBox SRS="EPSG:4326"
+                    minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="154" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=upca_prov_cuencashid&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="37.4173394550865" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>upca_prov_lagembestbania</Name> 
+        <Title>Lagunas, Embalses, Esteros y BaÃ±ados</Title> 
+        <Abstract>Vista de las Lagunas, Embalses, Esteros y BaÃ±ados de la provincia de Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <LatLonBoundingBox minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <BoundingBox SRS="EPSG:4326"
+                    minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="308" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=upca_prov_lagembestbania&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="37.4173394550865" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>upca_prov_sistbanialaest</Name> 
+        <Title>Sistema BaÃ±ado La Estrella</Title> 
+        <Abstract>Vista del Sistema BaÃ±ado La Estrella</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <BoundingBox SRS="EPSG:4326"
+                    minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="224" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=upca_prov_sistbanialaest&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="37.4173394550865" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>reservas</Name> 
+        <Title>Reservas Provinciales</Title> 
+        <Abstract>Vista de Reservas Provinciales de Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <BoundingBox SRS="EPSG:4326"
+                    minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="182" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=reservas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="37.4173394550865" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>ruralformosa</Name> 
+        <Title>Parcelas Rurales Formosa</Title> 
+        <Abstract>Vista de Parcelas Rurales de Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="203" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=ruralformosa&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="18.7084826389751" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>rurallaishi</Name> 
+        <Title>Parcelas Rurales Laishi</Title> 
+        <Abstract>Vista de Parcelas Rurales de MisiÃ³n Laishi</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="196" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rurallaishi&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="18.7084826389751" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>ruraloeste</Name> 
+        <Title>Parcelas Rurales Formosa Oeste</Title> 
+        <Abstract>Vista de Parcelas Rurales de Formosa Oeste</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="245" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=ruraloeste&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="18.7084826389751" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>ruralpatinio</Name> 
+        <Title>Parcelas Rurales PatiÃ±o</Title> 
+        <Abstract>Vista de Parcelas Rurales de PatiÃ±o</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="224" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=ruralpatinio&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="18.7084826389751" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>ruralpilagas</Name> 
+        <Title>Parcelas Rurales PilagÃ¡s</Title> 
+        <Abstract>Vista de Parcelas Rurales de PilagÃ¡s</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="231" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=ruralpilagas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="18.7084826389751" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>ruralpilcomayo</Name> 
+        <Title>Parcelas Rurales Pilcomayo</Title> 
+        <Abstract>Vista de Parcelas Rurales de Pilcomayo</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="217" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=ruralpilcomayo&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="18.7084826389751" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>ruralpirane</Name> 
+        <Title>Parcelas Rurales PiranÃ©</Title> 
+        <Abstract>Vista de Parcelas Rurales de PiranÃ©</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="224" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=ruralpirane&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="18.7084826389751" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdfsa_parurbanas</Name> 
+        <Title>Parcelas Urbanas Ciudad de Formosa</Title> 
+        <Abstract>Vista de las Parcelas Urbanas de la Ciudad de Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="287" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdfsa_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdfsa_nombrescalles</Name> 
+        <Title>Ciudad de Formosa - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="294" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdfsa_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdgda_parurbanas</Name> 
+        <Title>Ciudad de Gran Guardia - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Gran Guardia</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="322" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdgda_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdgda_nombrescalles</Name> 
+        <Title>Ciudad de Gran Guardia - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Gran Guardia</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="329" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdgda_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdhra_parurbanas</Name> 
+        <Title>Ciudad de Herradura - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Herradura</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="301" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdhra_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdhra_nombrescalles</Name> 
+        <Title>Ciudad de Herradura - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Herradura</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="308" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdhra_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdvelar_parurbanas</Name> 
+        <Title>Ciudad de Villa Escolar - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Villa Escolar</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="329" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdvelar_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdvelar_nombrescalles</Name> 
+        <Title>Ciudad de Villa Escolar - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Villa Escolar</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="336" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdvelar_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdmlla_parurbanas</Name> 
+        <Title>Ciudad de Lucio V. Mansilla - Parcelas Urbanas</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Lucio V. Mansilla</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="357" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdmlla_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdmlla_nombrescalles</Name> 
+        <Title>Ciudad de Lucio V. Mansilla - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Lucio V. Mansilla</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="364" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdmlla_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdlsi_parurbanas</Name> 
+        <Title>Ciudad de MisiÃ³n LaishÃ­ - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de MisiÃ³n LaishÃ­</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="343" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdlsi_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdlsi_nombrescalles</Name> 
+        <Title>Ciudad de MisiÃ³n LaishÃ­ - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de MisiÃ³n LaishÃ­</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="350" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdlsi_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdpne_parurbanas</Name> 
+        <Title>Ciudad de PiranÃ© - Parcelas Urbanas</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Herradura</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="287" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdpne_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdpne_nombrescalles</Name> 
+        <Title>Ciudad de PiranÃ© - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de PiranÃ©</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="294" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdpne_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdvne_parurbanas</Name> 
+        <Title>Ciudad de Mayor VillafaÃ±e - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Mayor VillafaÃ±e</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="350" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdvne_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdvne_nombrescalles</Name> 
+        <Title>Ciudad de Mayor VillafaÃ±e - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Mayor VillafaÃ±e</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="357" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdvne_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdcdo_parurbanas</Name> 
+        <Title>Ciudad de El Colorado - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de El Colorado</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="315" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdcdo_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdcdo_nombrescalles</Name> 
+        <Title>Ciudad de El Colorado - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de El Colorado</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="322" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdcdo_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cddce_parurbanas</Name> 
+        <Title>Ciudad de Villa Dostrece - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Villa Dostrece</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="336" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cddce_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cddce_nombrescalles</Name> 
+        <Title>Ciudad de Villa Dostrece - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Villa Dostrece</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="343" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cddce_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdpsto_parurbanas</Name> 
+        <Title>Ciudad de Palo Santo - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Palo Santo</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="308" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdpsto_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdpsto_nombrescalles</Name> 
+        <Title>Ciudad de Palo Santo - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Palo Santo</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="315" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdpsto_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdfna_parurbanas</Name> 
+        <Title>Ciudad de Comandante Fontana - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Comandante Fontana</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="364" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdfna_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdfna_nombrescalles</Name> 
+        <Title>Ciudad de Comandante Fontana - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Comandante Fontana</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="371" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdfna_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdlnes_parurbanas</Name> 
+        <Title>Ciudad de FortÃ­n Cbo. 1ro Lugones - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de FortÃ­n Cbo. 1ro Lugones</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="406" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdlnes_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdlnes_nombrescalles</Name> 
+        <Title>Ciudad de FortÃ­n Cbo. 1ro Lugones - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de FortÃ­n Cbo. 1ro Lugones</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="413" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdlnes_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdsmtin_parurbanas</Name> 
+        <Title>Ciudad de San MartÃ­n Nro. 2 - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de San MartÃ­n Nro. 2</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="364" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdsmtin_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdsmtin_nombrescalles</Name> 
+        <Title>Ciudad de San MartÃ­n Nro. 2 - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de San MartÃ­n Nro. 2</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="371" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdsmtin_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdgmes_parurbanas</Name> 
+        <Title>Ciudad de Villa General GÃ¼emes - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Villa General GÃ¼emes</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="385" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdgmes_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdgmes_nombrescalles</Name> 
+        <Title>Ciudad de Villa General GÃ¼emes - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Villa General GÃ¼emes</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="392" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdgmes_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdbno_parurbanas</Name> 
+        <Title>Ciudad de General Belgrano - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de General Belgrano</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="350" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdbno_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdbno_nombrescalles</Name> 
+        <Title>Ciudad de General Belgrano - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de General Belgrano</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="357" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdbno_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdita_parurbanas</Name> 
+        <Title>Ciudad de Ibarreta - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Ibarreta</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="294" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdita_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdita_nombrescalles</Name> 
+        <Title>Ciudad de Ibarreta - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Ibarreta</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="301" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdita_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdcmpo_parurbanas</Name> 
+        <Title>Ciudad de Estanislao del Campo - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Estanislao del Campo</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="378" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdcmpo_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdcmpo_nombrescalles</Name> 
+        <Title>Ciudad de Estanislao del Campo - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Estanislao del Campo</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="385" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdcmpo_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdtigre_parurbanas</Name> 
+        <Title>Ciudad de Pozo del Tigre - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Pozo del Tigre</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="336" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdtigre_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdtigre_nombrescalles</Name> 
+        <Title>Ciudad de Pozo del Tigre - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Pozo del Tigre</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="343" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdtigre_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdltas_parurbanas</Name> 
+        <Title>Ciudad de Las Lomitas - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Las Lomitas</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="315" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdltas_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdltas_nombrescalles</Name> 
+        <Title>Ciudad de Las Lomitas - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Las Lomitas</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-63.0215" miny="-26.9678" maxx="-63.0214" maxy="-26.9678" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="322" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdltas_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdyema_parurbanas</Name> 
+        <Title>Ciudad de Laguna Yema - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Laguna Yema</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32769</SRS> 
+        <LatLonBoundingBox minx="-63.0081" miny="-26.9966" maxx="-63.008" maxy="-26.9966" /> 
+        <BoundingBox SRS="EPSG:32769"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="315" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdyema_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdyema_nombrescalles</Name> 
+        <Title>Ciudad de Laguna Yema - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Laguna Yema</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32769</SRS> 
+        <LatLonBoundingBox minx="-63.0081" miny="-26.9966" maxx="-63.008" maxy="-26.9966" /> 
+        <BoundingBox SRS="EPSG:32769"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="322" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdyema_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdjrez_parurbanas</Name> 
+        <Title>Ciudad de Ingeniero JuÃ¡rez - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Ingeniero JuÃ¡rez</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32769</SRS> 
+        <LatLonBoundingBox minx="-63.0081" miny="-26.9966" maxx="-63.008" maxy="-26.9966" /> 
+        <BoundingBox SRS="EPSG:32769"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="357" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdjrez_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdjrez_nombrescalles</Name> 
+        <Title>Ciudad de Ingeniero JuÃ¡rez - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Ingeniero JuÃ¡rez</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32769</SRS> 
+        <LatLonBoundingBox minx="-63.0081" miny="-26.9966" maxx="-63.008" maxy="-26.9966" /> 
+        <BoundingBox SRS="EPSG:32769"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="364" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdjrez_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdello_parurbanas</Name> 
+        <Title>Ciudad de El Espinillo - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de El Espinillo</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="322" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdello_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdello_nombrescalles</Name> 
+        <Title>Ciudad de El Espinillo - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de El Espinillo</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="329" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdello_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdtresl_parurbanas</Name> 
+        <Title>Ciudad de Tres Lagunas - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Tres Lagunas</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="322" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdtresl_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdtresl_nombrescalles</Name> 
+        <Title>Ciudad de Tres Lagunas - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Tres Lagunas</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="329" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdtresl_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdtgle_parurbanas</Name> 
+        <Title>Ciudad de MisiÃ³n TacaaglÃ© - Parcelas Urbanas</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Herradura</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="357" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdtgle_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdtgle_nombrescalles</Name> 
+        <Title>Ciudad de MisiÃ³n TacaaglÃ© - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de MisiÃ³n TacaaglÃ©</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="364" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdtgle_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdclda_parurbanas</Name> 
+        <Title>Ciudad de Clorinda - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas de la ciudad de Clorinda</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="294" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdclda_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdclda_nombrescalles</Name> 
+        <Title>Ciudad de Clorinda - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Clorinda</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="301" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdclda_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdrhe_parurbanas</Name> 
+        <Title>Ciudad de Riacho He He - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Riacho He He</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="322" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdrhe_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdrhe_nombrescalles</Name> 
+        <Title>Ciudad de Riacho He He - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Riacho He He</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="329" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdrhe_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdneck_parurbanas</Name> 
+        <Title>Ciudad de Laguna Naickneck - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Laguna Naickneck</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="350" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdneck_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdneck_nombrescalles</Name> 
+        <Title>Ciudad de Laguna Naickneck - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Laguna Naickneck</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="357" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdneck_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdlbca_parurbanas</Name> 
+        <Title>Ciudad de Laguna Blanca - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Laguna Blanca</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="329" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdlbca_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdlbca_nombrescalles</Name> 
+        <Title>Ciudad de Laguna Blanca - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Laguna Blanca</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="336" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdlbca_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdshrio_parurbanas</Name> 
+        <Title>Ciudad de San Hilario - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de San Hilario</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="315" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdshrio_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdshrio_nombrescalles</Name> 
+        <Title>Ciudad de San Hilario - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de San Hilario</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="322" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdshrio_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdpmas_parurbanas</Name> 
+        <Title>Ciudad de Siete Palmas - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Siete Palmas</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="322" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdpmas_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdpmas_nombrescalles</Name> 
+        <Title>Ciudad de Siete Palmas - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Siete Palmas</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="329" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdpmas_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdpyo_parurbanas</Name> 
+        <Title>Ciudad de Puerto Pilcomayo - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Puerto Pilcomayo</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="350" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdpyo_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdpyo_nombrescalles</Name> 
+        <Title>Ciudad de Puerto Pilcomayo - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Puerto Pilcomayo</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="357" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdpyo_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdsola_parurbanas</Name> 
+        <Title>Ciudad de Palma Sola - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Palma Sola</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="308" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdsola_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdsola_nombrescalles</Name> 
+        <Title>Ciudad de Palma Sola - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Palma Sola</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="315" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdsola_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdbvta_parurbanas</Name> 
+        <Title>Ciudad de Buena Vista - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de Buena Vista</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="315" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdbvta_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdbvta_nombrescalles</Name> 
+        <Title>Ciudad de Buena Vista - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de Buena Vista</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="322" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdbvta_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdmni_parurbanas</Name> 
+        <Title>Ciudad de General Mosconi - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de General Mosconi</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32769</SRS> 
+        <LatLonBoundingBox minx="-63.0081" miny="-26.9966" maxx="-63.008" maxy="-26.9966" /> 
+        <BoundingBox SRS="EPSG:32769"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="343" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdmni_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdmni_nombrescalles</Name> 
+        <Title>Ciudad de General Mosconi - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de General Mosconi</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32769</SRS> 
+        <LatLonBoundingBox minx="-63.0081" miny="-26.9966" maxx="-63.008" maxy="-26.9966" /> 
+        <BoundingBox SRS="EPSG:32769"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="350" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdmni_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdfierro_parurbanas</Name> 
+        <Title>Ciudad de MojÃ³n de Fierro - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la ciudad de MojÃ³n de Fierro</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="350" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdfierro_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cdfierro_nombrescalles</Name> 
+        <Title>Ciudad de MojÃ³n de Fierro - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la ciudad de MojÃ³n de Fierro</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="357" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cdfierro_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cniafsa_parurbanas</Name> 
+        <Title>Colonia Formosa - Parcelas Urbanas</Title> 
+        <Abstract>Vista de las parcelas urbanas de la Colonia Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="273" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cniafsa_parurbanas&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="18.7092309932477" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_cniafsa_nombrescalles</Name> 
+        <Title>Colonia Formosa - Nombres de Calles</Title> 
+        <Abstract>Vista de los nombres de calles de la Colonia Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-63.0303" miny="-26.9104" maxx="-63.0303" maxy="-26.9104" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-62.3439" miny="-26.8721" maxx="-57.8515" maxy="-22.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="280" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_cniafsa_nombrescalles&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="0" max="2.99379126771414" /> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>upca_prov_canalcorred</Name> 
+        <Title>Canales y Correderas</Title> 
+        <Abstract>Vista de los Canales y Correderas de la provincia de Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <LatLonBoundingBox minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <BoundingBox SRS="EPSG:4326"
+                    minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="175" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=upca_prov_canalcorred&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="37.4173394550865" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>upca_prov_riacharroy</Name> 
+        <Title>Riachos y Arroyos</Title> 
+        <Abstract>Vista de los Riachos y Arroyos de la provincia de Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <LatLonBoundingBox minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <BoundingBox SRS="EPSG:4326"
+                    minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="154" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=upca_prov_riacharroy&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="37.4173394550865" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>upca_prov_riosppales</Name> 
+        <Title>RÃ­os Principales</Title> 
+        <Abstract>Vista de los RÃ­os Principales de la provincia de Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <LatLonBoundingBox minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <BoundingBox SRS="EPSG:4326"
+                    minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="154" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=upca_prov_riosppales&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="37.4173394550865" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_centrospobl</Name> 
+        <Title>Centros Poblados</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+        <ScaleHint min="0" max="935.443214982706" /> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_activhumanas</Name> 
+        <Title>Actividades Humanas</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_puntosgeogdest</Name> 
+        <Title>Puntos GeogrÃ¡ficos Destacados</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_edificios</Name> 
+        <Title>Edificios</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_infraestrural</Name> 
+        <Title>Infraestructura Rural</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_puentes</Name> 
+        <Title>Puentes</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="0" opaque="0" cascaded="1"> 
+        <Name>ign_wms_redgeodesica</Name> 
+        <Title>Red GeodÃ©sica</Title> 
+        <SRS>EPSG:4326</SRS> 
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>upca_prov_redhidrom</Name> 
+        <Title>Red HidromÃ©trica</Title> 
+        <Abstract>Vista de la Red HidromÃ©trica de la provincia de Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <LatLonBoundingBox minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <BoundingBox SRS="EPSG:4326"
+                    minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="154" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=upca_prov_redhidrom&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="37.4173394550865" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>upca_prov_redpluviom</Name> 
+        <Title>Red PluviomÃ©trica</Title> 
+        <Abstract>Vista de la Red PluviomÃ©trica de la provincia de Formosa</Abstract> 
+        <SRS>EPSG:4326</SRS> 
+        <LatLonBoundingBox minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <BoundingBox SRS="EPSG:4326"
+                    minx="-63.3439" miny="-27.8721" maxx="-56.8515" maxy="-21.7111" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="161" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=upca_prov_redpluviom&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+        <ScaleHint min="37.4173394550865" max="0" /> 
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. --> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_parurbanas_faja1</Name> 
+<!-- WARNING: Mandatory metadata '..._title' was missing in this context. --> 
+        <Title>cat_parurbanas_faja1</Title> 
+        <SRS>EPSG:32769</SRS> 
+        <LatLonBoundingBox minx="-1.83348e+07" miny="-4.42556e+23" maxx="178.164" maxy="8.1738e+12" /> 
+        <BoundingBox SRS="EPSG:32769"
+                    minx="-2.5e+07" miny="-2.5e+07" maxx="2.5e+07" maxy="2.5e+07" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="210" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_parurbanas_faja1&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_parurbanas_faja3</Name> 
+<!-- WARNING: Mandatory metadata '..._title' was missing in this context. --> 
+        <Title>cat_parurbanas_faja3</Title> 
+        <SRS>EPSG:32768</SRS> 
+        <LatLonBoundingBox minx="-168.398" miny="-4.71566e+23" maxx="2.70178e+07" maxy="8.70968e+12" /> 
+        <BoundingBox SRS="EPSG:32768"
+                    minx="-2.5e+07" miny="-2.5e+07" maxx="2.5e+07" maxy="2.5e+07" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="210" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_parurbanas_faja3&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+    </Layer> 
+    <Layer queryable="1" opaque="0" cascaded="0"> 
+        <Name>cat_parurbanas_faja5</Name> 
+<!-- WARNING: Mandatory metadata '..._title' was missing in this context. --> 
+        <Title>cat_parurbanas_faja5</Title> 
+        <SRS>EPSG:32767</SRS> 
+        <LatLonBoundingBox minx="-5.57391e+06" miny="-5.02227e+23" maxx="3.24448e+07" maxy="9.27606e+12" /> 
+        <BoundingBox SRS="EPSG:32767"
+                    minx="-2.5e+07" miny="-2.5e+07" maxx="2.5e+07" maxy="2.5e+07" /> 
+        <Style> 
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="210" height="23">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://idef.formosa.gob.ar/cgi-bin/mapfile?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cat_parurbanas_faja5&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style> 
+    </Layer> 
+  </Layer> 
+</Capability> 
+</WMT_MS_Capabilities>
